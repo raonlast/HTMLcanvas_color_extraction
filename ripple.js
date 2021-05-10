@@ -6,7 +6,7 @@ export class Ripple {
         this.y = 0;
         this.radius = 0;
         this.maxRadius = 0;
-        this.speed = 10;
+        this.speed = 35;
     }
 
     resize(stageWidth, stageHeight) {
@@ -27,7 +27,7 @@ export class Ripple {
         }
 
         ctx.beginPath();
-        ctx.fillStyle = '#00ff00';
+        // ctx.fillStyle = '#00ff00';
         ctx.arc(this.x, this.y, this.radius, Math.PI * 2, false);
         ctx.fill();
     }
